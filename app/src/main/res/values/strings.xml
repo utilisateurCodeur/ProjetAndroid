@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="navigation_drawer_open">Ouvre le menu</string>
+    <string name="navigation_drawer_close">Ferme le menu</string>
+    <string name="Application_Sport_Tennis">Application Sport Tennis</string>
+    <string name="Equipe1">Equipe1</string>
+    <string name="faute_directe">faute directe</string>
+    <string name="ACE">ACE</string>
+    <string name="Fautes_indirecte">Fautes indirectes</string>
+    <string name="Score_final">Score final</string>
+    <string name="Equipe2">Equipe2</string>
+    <string name="Coup_gagnant">Coup gagnant</string>
+
+    <string name="action_settings">Paramètres</string>
+</resources>

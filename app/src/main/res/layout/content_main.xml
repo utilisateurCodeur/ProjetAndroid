@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="android.fr.jn.projet.MainActivity"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Application_Sport_Tennis"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout">
+
+
+    </GridLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/Equipe1"
+        android:id="@+id/buttonNomEq1"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Eq1_fauteDir"
+        android:layout_alignEnd="@+id/Eq1_fauteDir" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/faute_directe"
+        android:id="@+id/Eq1ButtonFauteDir"
+        android:layout_below="@+id/buttonNomEq1"
+        android:layout_toStartOf="@+id/Eq1_ace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq1_fauteDir"
+        android:layout_alignBottom="@+id/Eq1ButtonFauteDir"
+        android:layout_toRightOf="@+id/Eq1ButtonFauteDir"
+        android:layout_toEndOf="@+id/Eq1ButtonFauteDir"
+        android:layout_below="@+id/buttonNomEq1" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ACE"
+        android:id="@+id/Eq1ButtonAce"
+        android:layout_below="@+id/Eq1ButtonFauteIndir"
+        android:layout_toRightOf="@+id/gridLayout"
+        android:layout_toEndOf="@+id/gridLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq1_ace"
+        android:layout_above="@+id/Eq1ButtonCoupGagnant"
+        android:layout_toRightOf="@+id/Eq1ButtonAce"
+        android:layout_toEndOf="@+id/Eq1ButtonAce"
+        android:layout_alignTop="@+id/Eq1ButtonAce" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq1_fauteIndir"
+        android:layout_toRightOf="@+id/Eq1ButtonFauteDir"
+        android:layout_toEndOf="@+id/Eq1ButtonFauteDir"
+        android:layout_alignBottom="@+id/Eq1ButtonFauteIndir"
+        android:layout_below="@+id/Eq1ButtonFauteDir" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Fautes_indirecte"
+        android:id="@+id/Eq1ButtonFauteIndir"
+        android:layout_below="@+id/Eq1ButtonFauteDir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Coup_gagnant"
+        android:id="@+id/Eq1ButtonCoupGagnant"
+        android:layout_below="@+id/Eq1ButtonAce"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Score_final"
+        android:id="@+id/Eq1_score"
+        android:layout_below="@+id/Eq1ButtonCoupGagnant"
+        android:layout_alignBottom="@+id/Eq2_score"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq1_coupGag"
+        android:layout_alignBottom="@+id/Eq1ButtonCoupGagnant"
+        android:layout_toRightOf="@+id/Eq1ButtonCoupGagnant"
+        android:layout_toEndOf="@+id/Eq1ButtonCoupGagnant"
+        android:layout_below="@+id/Eq1ButtonAce" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq1_ScoreFinal"
+        android:layout_alignBottom="@+id/Eq1_score"
+        android:layout_toRightOf="@+id/Eq1_score"
+        android:layout_toEndOf="@+id/Eq1_score"
+        android:layout_alignTop="@+id/Eq1_score" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/Equipe2"
+        android:id="@+id/buttonNomEq2"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/Eq1_fauteDir"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/Eq1_fauteDir"
+        android:layout_toEndOf="@+id/Eq1_fauteDir" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/faute_directe"
+        android:id="@+id/Eq2ButtonFauteDir"
+        android:layout_above="@+id/Eq1_fauteIndir"
+        android:layout_toRightOf="@+id/buttonNomEq1"
+        android:layout_toEndOf="@+id/buttonNomEq1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq2_FautDir"
+        android:layout_alignBottom="@+id/Eq2ButtonFauteDir"
+        android:layout_toRightOf="@+id/Eq2ButtonFauteDir"
+        android:layout_alignTop="@+id/Eq2ButtonFauteDir" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Fautes_indirecte"
+        android:id="@+id/Eq2ButtonFauteIndir"
+        android:layout_alignBottom="@+id/Eq1_fauteIndir"
+        android:layout_alignLeft="@+id/Eq2ButtonFauteDir"
+        android:layout_alignStart="@+id/Eq2ButtonFauteDir" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq2_fauteIndir"
+        android:layout_alignBottom="@+id/Eq2ButtonFauteIndir"
+        android:layout_toRightOf="@+id/Eq2ButtonFauteIndir"
+        android:layout_below="@+id/Eq2ButtonFauteDir" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ACE"
+        android:id="@+id/button"
+        android:layout_above="@+id/Eq1_coupGag"
+        android:layout_toRightOf="@+id/Eq1_ace"
+        android:layout_toEndOf="@+id/Eq1_ace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq2_ace"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:layout_alignTop="@+id/button" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Coup_gagnant"
+        android:id="@+id/Eq2ButtonCoupGagnant"
+        android:layout_below="@+id/Eq1_ace"
+        android:layout_toRightOf="@+id/Eq1_ace"
+        android:layout_toEndOf="@+id/Eq1_ace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq2_coupGag"
+        android:layout_alignBottom="@+id/Eq2ButtonCoupGagnant"
+        android:layout_toRightOf="@+id/Eq2ButtonCoupGagnant"
+        android:layout_below="@+id/button" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Score_final"
+        android:id="@+id/Eq2_score"
+        android:layout_below="@+id/Eq1_coupGag"
+        android:layout_toRightOf="@+id/Eq1_coupGag"
+        android:layout_toEndOf="@+id/Eq1_coupGag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/Eq2_ScoreFinal"
+        android:layout_alignBottom="@+id/Eq2_score"
+        android:layout_toRightOf="@+id/Eq2_score"
+        android:layout_alignTop="@+id/Eq2_score" />
+
+    <com.google.android.maps.MapView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:apiKey="AIzaSyB3Q7Mo826xgfD85iZdp6XNus_WIdJZj5U"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Eq2_ScoreFinal"
+        android:layout_alignEnd="@+id/Eq2_ScoreFinal"
+        android:layout_below="@+id/Eq1_score"
+        android:layout_toRightOf="@+id/gridLayout"
+        android:layout_toEndOf="@+id/gridLayout" />
+
+
+</RelativeLayout>

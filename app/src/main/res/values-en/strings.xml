@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Attend</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Application_Sport_Tennis">Tennis Sport Application</string>
+    <string name="Equipe1">Team1</string>
+    <string name="faute_directe">direct fault</string>
+    <string name="ACE">ACE</string>
+    <string name="Fautes_indirecte">Indirect fault</string>
+    <string name="Score_final">Final Score</string>
+    <string name="Equipe2">Team2</string>
+    <string name="Coup_gagnant">Winning blow</string>
+
+
+    <string name="action_settings">Settings</string>
+</resources>
